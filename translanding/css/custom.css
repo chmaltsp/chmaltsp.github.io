@@ -1,0 +1,20 @@
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Pathway Gothic One', sans-serif;
+}
+.logo-img {
+	padding-top: 25px;
+	
+}
+
+.quote {
+	padding-top: 50px;
+}
+.emailform {
+	padding-top:50px;
+}
+.byline {
+	padding-right: 45px;
+}
+.listpad{
+	padding-top: 15px;
+}
