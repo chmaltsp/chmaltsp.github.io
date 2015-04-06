@@ -1,0 +1,665 @@
+/* line 54, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.btn1 {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: 0px;
+  left: 22px;
+  transition-duration: 0.5s; }
+  /* line 56, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .btn1 .icon-left {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 4px;
+    width: 15px;
+    top: 15px;
+    background-color: #212121;
+    left: 0px; }
+    /* line 59, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1 .icon-left:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 15px;
+      height: 4px;
+      background-color: #212121;
+      content: "";
+      top: -10px; }
+    /* line 62, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1 .icon-left:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 15px;
+      height: 4px;
+      background-color: #212121;
+      content: "";
+      top: 10px; }
+    /* line 65, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1 .icon-left:hover {
+      cursor: pointer; }
+  /* line 69, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .btn1 .icon-right {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 4px;
+    width: 15px;
+    top: 15px;
+    background-color: #212121;
+    left: 15px; }
+    /* line 72, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1 .icon-right:before {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 15px;
+      height: 4px;
+      background-color: #212121;
+      content: "";
+      top: -10px; }
+    /* line 75, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1 .icon-right:after {
+      transition-duration: 0.5s;
+      position: absolute;
+      width: 15px;
+      height: 4px;
+      background-color: #212121;
+      content: "";
+      top: 10px; }
+  /* line 80, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .btn1.open .icon-left {
+    transition-duration: 0.5s;
+    background: transparent; }
+    /* line 83, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1.open .icon-left:before {
+      transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px); }
+    /* line 86, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1.open .icon-left:after {
+      transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px); }
+  /* line 90, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .btn1.open .icon-right {
+    transition-duration: 0.5s;
+    background: transparent; }
+    /* line 93, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1.open .icon-right:before {
+      transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px); }
+    /* line 96, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .btn1.open .icon-right:after {
+      transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px); }
+  /* line 101, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .btn1:hover {
+    cursor: pointer; }
+
+@font-face {
+  font-family: 'Gt Walsheim';
+  src: url("../fonts/gt-walsheim-web.ttf") format('truetype'), url("../fonts/gt-walsheim-web.woff") format('woff'), url("../fonts/gt-walsheim-web.eot") format('embedded-opentype') url("../fonts/gt-walsheim-web.svg#gt-walsheim-web") format('svg'); }
+
+@font-face {
+  font-family: 'Caslon';
+  src: url("../fonts/caslon-540.ttf") format('truetype'), url("../fonts/caslon-540.eot") format('embedded-opentype'); }
+
+/* line 117, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+html {
+  box-sizing: border-box; }
+
+/* line 123, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 127, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0; }
+
+/* line 138, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Gt Walsheim", sans-serif; }
+
+/* line 142, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+p {
+  font-family: "Caslon", serif;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white; }
+
+/* line 150, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+section h1 {
+  font-size: 2.4rem;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.5rem; }
+
+/* line 157, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+section h2 {
+  font-size: 2rem;
+  color: white; }
+
+/* line 162, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+section h3 {
+  font-size: 1.8rem;
+  color: white;
+  text-align: center; }
+
+/* line 168, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.wrapper {
+  width: 80%;
+  margin: auto; }
+
+/* line 173, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.fullwidth {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto !important; }
+
+/* line 179, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+header {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  background-color: white; }
+
+/* line 186, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+nav {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  background-color: transparent;
+  font-family: 'GT Walsheim',
+    sans-serif;
+  color: #333333; }
+  /* line 187, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav .respheading {
+    display: none; }
+  /* line 196, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav a {
+    text-decoration: none;
+    color: #333333;
+    opacity: .8;
+    -webkit-transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -o-transition: opacity .25s ease-in;
+    transition: opacity .25s ease-in; }
+  /* line 205, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav a:hover {
+    opacity: 1; }
+  /* line 209, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav ul {
+    font-size: 1.6rem;
+    list-style-type: none;
+    width: auto;
+    margin: auto;
+    text-align: center; }
+    /* line 215, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    nav ul li {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      display: inline; }
+  /* line 221, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav div.togglerow {
+    display: none; }
+
+/* line 226, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+#bigheading {
+  background: white url(../img/pianokeys.png) no-repeat top center;
+  padding-top: 34rem;
+  padding-bottom: 5rem;
+  font-family: 'GT Walsheim';
+  text-align: center;
+  width: auto;
+  margin: auto;
+  color: black; }
+  /* line 235, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: .85;
+    color: black; }
+  /* line 242, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading .end {
+    font-size: 10rem; }
+  /* line 245, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading .music {
+    font-size: 9rem; }
+  /* line 248, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading .tech {
+    font-size: 10.6rem;
+    padding-top: .5rem; }
+  /* line 252, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading .and {
+    font-size: 15rem; }
+  /* line 255, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 3.5rem;
+    line-height: .85;
+    color: black; }
+  /* line 262, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading div {
+    display: inline-block;
+    vertical-align: top; }
+  /* line 266, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading .anddiv {
+    vertical-align: bottom; }
+
+/* line 271, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.headwrao {
+  position: fixed; }
+
+/* line 275, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+#about {
+  background-color: #530000; }
+
+/* line 279, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+hr {
+  width: 15rem;
+  margin-bottom: 3rem; }
+
+/* line 284, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.about {
+  padding-bottom: 5rem; }
+  /* line 286, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 0.2rem; }
+  /* line 291, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skillwrap {
+    margin-top: 2rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
+  /* line 299, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skills {
+    color: white;
+    display: flex-item;
+    text-align: left;
+    width: calc(100%/2);
+    flex: 1; }
+    /* line 306, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .about .skills ul {
+      list-style: none;
+      text-align: center; }
+      /* line 309, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+      .about .skills ul li {
+        font-size: 1.6rem; }
+
+/* line 316, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+#music {
+  background-color: black;
+  padding: 2rem; }
+  /* line 319, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #music h1 {
+    margin: 0; }
+  /* line 323, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #music h3 {
+    margin: 0; }
+
+/* line 328, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+#projects {
+  background-color: #050127;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  /* line 332, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #projects h1 {
+    padding-bottom: 2rem; }
+  /* line 335, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #projects .subheading {
+    margin-bottom: 2rem; }
+
+/* line 340, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.floatright {
+  float: right; }
+
+/* line 344, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.clear {
+  clear: both; }
+
+/* line 348, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.proj-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+  /* line 359, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container .item {
+    text-align: center;
+    display: flex-item;
+    width: calc(100%/2);
+    align-items: center; }
+    /* line 367, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .proj-container .item p {
+      display: block;
+      font-size: 1.1rem;
+      margin: 0; }
+    /* line 372, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .proj-container .item .p1content {
+      display: none; }
+    /* line 375, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .proj-container .item .p2content {
+      display: none; }
+  /* line 379, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container .item:hover {
+    cursor: pointer; }
+  /* line 382, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: blanchedalmond;
+    height: 9rem;
+    max-height: 9rem;
+    margin: 2rem; }
+    /* line 391, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .proj-container .cell .title {
+      margin-bottom: 0rem; }
+  /* line 396, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container #proj1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/water.jpg"); }
+  /* line 399, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container #proj2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/pursuits_color.png");
+    background-position: top; }
+  /* line 403, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container #proj3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/gosomewhere.jpg"); }
+  /* line 406, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container #proj4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../img/lgncl.jpg"); }
+  /* line 409, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container h2 {
+    color: azure;
+    margin: 0;
+    font-size: 1.7rem; }
+
+/* line 415, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.pursuits {
+  background-color: #35A37F; }
+
+/* line 423, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.projcontent .content {
+  flex-flow: row wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  height: auto;
+  background-color: white;
+  justify-content: space-around;
+  align-items: flex-start;
+  display: flex;
+  background-color: transparent;
+  @-webkit-keyframes bar-fill {
+    /* line 574, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    0% {
+      width: 0; } }
+
+  @keyframes bar-fill {
+    /* line 579, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    0% {
+      width: 0; } }
+ }
+  /* line 435, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .white {
+    color: white !important; }
+  /* line 438, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-text {
+    width: 50%; }
+  /* line 442, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .half {
+    width: 50%; }
+  /* line 445, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .thirds {
+    width: calc(100%/3); }
+  /* line 448, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content div {
+    margin-top: 4rem; }
+  /* line 451, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content ul {
+    list-style: square; }
+    /* line 453, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .projcontent .content ul li {
+      padding: .4rem;
+      font-family: Caslon;
+      color: #333333;
+      font-size: 1.6rem; }
+  /* line 460, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-img {
+    text-align: left; }
+    /* line 463, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .projcontent .content .con-img img {
+      width: 100%; }
+  /* line 467, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .pad-top {
+    padding-top: 2rem; }
+  /* line 470, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .margin-clear {
+    margin-top: 0; }
+  /* line 473, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .margin-left {
+    margin-left: 6rem; }
+  /* line 476, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .sixty {
+    display: block;
+    margin: auto;
+    width: 60%; }
+  /* line 481, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .eighty {
+    display: block;
+    margin: auto;
+    width: 80%; }
+  /* line 486, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .img-center {
+    display: block;
+    margin: auto; }
+  /* line 490, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .pad-left {
+    padding-left: 2rem; }
+  /* line 493, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .pad-right {
+    padding-right: 2rem; }
+  /* line 496, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content p {
+    color: #333333;
+    text-align: left;
+    padding-right: 2rem; }
+  /* line 501, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content h2 {
+    color: #333333;
+    font-size: 2rem;
+    margin-top: 0; }
+  /* line 506, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content h3 {
+    color: #333333;
+    font-size: 1.8rem;
+    margin-top: 0; }
+  /* line 511, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .cta {
+    display: block;
+    margin: auto;
+    text-align: center; }
+  /* line 517, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content progress, .projcontent .content progress[role] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-size: auto;
+    height: 2rem;
+    width: 90%; }
+  /* line 527, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .growth-stats {
+    list-style: none;
+    margin: 0;
+    padding: 0rem; }
+    /* line 531, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .projcontent .content .growth-stats h3 {
+      margin-bottom: .5rem; }
+  /* line 536, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat {
+    margin-bottom: 0rem;
+    position: relative;
+    z-index: -1; }
+    /* line 540, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .projcontent .content .stat h3 {
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: GT Walsheim, arial, sans-serif;
+      left: 1rem;
+      line-height: 0;
+      position: relative;
+      top: 1.5rem; }
+    /* line 549, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    .projcontent .content .stat ::-webkit-progress-value {
+      -webkit-animation: bar-fill 2s;
+      width: 0px; }
+  /* line 555, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-1::-webkit-progress-value {
+    background: #ff9e2c; }
+  /* line 558, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-1::-moz-progress-bar {
+    background: #ff9e2c; }
+  /* line 561, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-2::-webkit-progress-value {
+    background: #4ecdc4; }
+  /* line 564, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-2::-moz-progress-bar {
+    background: #4ecdc4; }
+  /* line 567, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-3::-webkit-progress-value {
+    background: #ff6b6b; }
+  /* line 570, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .stat-3::-moz-progress-bar {
+    background: #ff6b6b; }
+
+/* line 585, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.socials {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: auto; }
+  /* line 590, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .socials a {
+    padding: 2rem; }
+
+/* line 595, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.about h3 a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color .25s ease-in;
+  -moz-transition: color .25s ease-in;
+  -o-transition: color .25s ease-in;
+  transition: color .25s ease-in; }
+
+/* line 604, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+.about h3 a:hover {
+  color: goldenrod; }
+
+@media only screen and (max-width: 50em) {
+  /* line 612, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skillwrap {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap; }
+  /* line 617, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skills {
+    flex: 0 0 50%; }
+  /* line 621, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav {
+    width: auto;
+    text-align: center; }
+    /* line 624, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    nav ul {
+      display: none; }
+      /* line 626, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+      nav ul #logo {
+        display: none; }
+      /* line 629, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+      nav ul li {
+        display: block; }
+    /* line 633, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    nav div.togglerow {
+      text-align: left;
+      display: inline; }
+      /* line 635, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+      nav div.togglerow .btn1 {
+        float: left; }
+    /* line 641, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    nav .respheading {
+      margin: 0;
+      display: inline-block;
+      font-size: 1.6rem; }
+  /* line 647, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  #bigheading {
+    background-size: 100%;
+    padding-top: 22rem; }
+  /* line 652, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .proj-container .item {
+    width: 100%; }
+  /* line 659, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-text {
+    width: 100%; }
+  /* line 662, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-img {
+    width: 100%; }
+  /* line 665, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .half {
+    width: 100%; }
+  /* line 668, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .thirds {
+    width: 100%; }
+  /* line 671, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .sixty {
+    width: 75%; }
+  /* line 674, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .pad-right {
+    padding: 0; }
+  /* line 677, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .pad-left {
+    padding: 0; } }
+
+@media only screen and (min-width: 50em) and (max-width: 64em) {
+  /* line 687, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skillwrap {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap; }
+  /* line 692, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .about .skills {
+    flex: 1 0 30%; }
+  /* line 698, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav ul li {
+    display: inline; }
+  /* line 702, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  nav div.togglerow {
+    display: none; }
+    /* line 703, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+    nav div.togglerow .menu {
+      margin: auto; }
+  /* line 712, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-text {
+    width: 100%; }
+  /* line 715, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .con-img {
+    width: 100%; }
+  /* line 718, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .half {
+    width: 100%; }
+  /* line 721, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .thirds {
+    width: 100%; }
+  /* line 724, /Users/philipchmalts/Documents/Github/portfolio2/scss/style.scss */
+  .projcontent .content .sixty {
+    width: 60%;
+    display: block;
+    margin: auto; } }
+
+/*# sourceMappingURL=style.css.map */
